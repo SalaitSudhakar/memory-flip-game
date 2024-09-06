@@ -66,7 +66,7 @@ function checkForMatch() {
       cardTwoImg.setAttribute("src", "assets/flip.jpg");
       cards[optionOneId].style.backgroundColor = "#0d0630";
       cards[optionTwoId].style.backgroundColor = "#0d0630";
-    }, 100);
+    }, 500);
   }
 
 
