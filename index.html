@@ -5,64 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Flip Game</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Memory Flip Game</h1>
       <span id="winning-msg"></span>
-      <button id="restart-btn">Restart Game</button>
+      <h3 class="match-found-msg">
+        Matches Found: <span id="score-value"></span>
+      </h3>
+      <button id="restart-btn">Restart</button>
     </header>
-    <div id="game-board" class="board">
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-      <div class="card">
-        <img src="assets/flip.jpg" alt="flip" class="flip" />
-      </div>
-    </div>
+    <!-- game board -->
+    <div id="game-board" class="board"></div>
     <script src="script.js"></script>
   </body>
 </html>

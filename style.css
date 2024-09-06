@@ -1,71 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: #007A54;
+  background-color: #007a54;
 }
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-    font-size:  2rem;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #F7F4F3;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 2rem;
-    margin: 1rem;
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #f7f4f3;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 1rem;
 }
 #winning-msg {
   padding: 1rem;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: none;
+  color: rgb(230, 136, 136);
+}
+.match-found-msg{
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
 #restart-btn {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   padding: 1.2rem;
-   font-weight: bolder;
-   border-radius: 12px;
-   border: 0;
-   background-color: #0B132B;
-   color: #fff;
-   cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 1.2rem;
+  font-weight: bolder;
+  border-radius: 12px;
+  border: 0;
+  background-color: #0b132b;
+  color: #fff;
+  cursor: pointer;
 }
 #restart-btn:hover {
-    background-color: #1C435E;
+  background-color: #1c435e;
 }
 #game-board {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    max-width: 900px;
-    margin: 5rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 5rem auto;
 }
 .card {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    max-width: 200px;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    background-color: #0D0630;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #0d0630;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
-.flip {
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 50%;
-   
+.card.flipped {
+  transform: rotateY("180deg");
+  background-color: white;
+}
+.front-face {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.back-face {
+  width: 50px;
+  height: 50px;
+}
+
+.flip-back {
+   background-color: #0d0630;
 }
 .hide {
-    display: none;
+  display: none;
 }
