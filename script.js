@@ -98,7 +98,7 @@ function flipCard() {
     setTimeout(() => {
       checkForMatch();
       lockBoard = false;
-    }, 100);
+    }, 50);
   }
 }
 
